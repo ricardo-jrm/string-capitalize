@@ -1,9 +1,13 @@
-import { novaHelloWorld } from './index';
+import { stringCapitalize } from './index';
 
-describe('example test suite', () => {
-  it('should console.log "Hello World from Nova"', () => {
-    console.log = jest.fn(); // eslint-disable-line no-console
-    novaHelloWorld();
-    expect(console.log).toHaveBeenCalledWith('Hello World from Nova'); // eslint-disable-line no-console
+describe('capitalizes strings', () => {
+  const lorem = 'lorem ipsum dolor sit amet';
+
+  it('should capitalize the 1st word of "lorem ipsum dolor sit amet"', () => {
+    expect(stringCapitalize(lorem)).toBe('Lorem ipsum dolor sit amet');
+  });
+
+  it('should capitalize the all words of "lorem ipsum dolor sit amet"', () => {
+    expect(stringCapitalize(lorem, true)).toBe('Lorem Ipsum Dolor Sit Amet');
   });
 });
