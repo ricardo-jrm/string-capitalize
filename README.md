@@ -21,10 +21,28 @@
 
 <br />
 
-### <b>Usage</b>
+### <b>Install</b>
 
 ```ts
+npm install @ricardo-jrm/string-capitalize
 
+yarn add @ricardo-jrm/string-capitalize
+```
+
+<br />
+
+### <b>Usage</b>
+
+Capitalizes the first character of a given string. Option to capitalize all words.
+
+```ts
+import { stringCapitalize } from '@ricardo-jrm/string-capitalize'
+
+stringCapitalize('lorem ipsum dolor sit amet');
+-> "Lorem ipsum dolor sit amet"
+
+stringCapitalize('lorem ipsum dolor sit amet', true);
+-> "Lorem Ipsum Dolor Sit Amet"
 ```
 
 <br />
