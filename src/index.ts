@@ -1,7 +1,6 @@
 /**
  * Capitalizes the first character of a given string. Option to capitalize all words.
  */
-
 export const stringCapitalize = (str: string, allWords?: boolean) => {
   if (!allWords) {
     const chars = str.split('');
