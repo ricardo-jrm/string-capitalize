@@ -2,7 +2,7 @@
   "name": "@ricardo-jrm/string-capitalize",
   "description": "Capitalize strings",
   "version": "0.0.3-development",
-  "main": "dist/index.min.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
   "repository": {
